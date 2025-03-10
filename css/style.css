@@ -1,4 +1,10 @@
-.news-date {
+p {
+  margin-bottom: 0.5em;
+}.publication-list p {
+  margin: 20px 0;
+  font-style: italic;
+  color: #666;
+}.news-date {
   font-weight: bold;
   color: #cc0000;
   margin-right: 10px;
@@ -163,10 +169,14 @@ li {
   font-weight: 500;
 }
 
-.publication-list p {
-  margin: 20px 0;
-  font-style: italic;
-  color: #666;
+/* Custom fix for specific publication */
+.custom-height-fix {
+  max-height: 130px;
+  overflow: hidden;
+}
+
+.custom-height-fix .pub-image img {
+  max-height: 70px;
 }
 
 /* Publications */
@@ -186,11 +196,11 @@ li {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  padding: 12px;
-  margin-bottom: 16px;
+  padding: 10px;
+  margin-bottom: 15px;
   transition: transform 0.3s ease;
   min-height: 0;
-  max-height: 160px;
+  max-height: 180px; /* Increased slightly to fit all content */
   overflow: hidden;
 }
 
@@ -216,18 +226,22 @@ li {
   object-fit: contain;
 }
 
+/* Set line height for all text in publication cards */
 .pub-info {
   flex: 1;
+  line-height: 1.3;
 }
 
 .pub-info h3 {
-  margin-bottom: 8px;
-  font-size: 1.1rem;
+  margin-bottom: 5px;
+  font-size: 1.05rem;
+  line-height: 1.3;
 }
 
 .authors {
-  margin-bottom: 10px;
-  font-size: 0.95rem;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  line-height: 1.3;
 }
 
 .author-me {
@@ -236,12 +250,14 @@ li {
 }
 
 .venue {
-  margin-bottom: 10px;
-  font-size: 0.95rem;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  line-height: 1.3;
 }
 
 .links {
-  margin-top: 10px;
+  margin-top: 5px;
+  font-size: 0.9rem;
 }
 
 /* Services Section */
