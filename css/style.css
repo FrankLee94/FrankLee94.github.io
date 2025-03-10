@@ -302,26 +302,37 @@ li {
   padding: 25px;
 }
 
-/* Footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 30px 0;
-  margin-top: 50px;
-}
-
-footer p {
-  margin-bottom: 10px;
+/* Visit map container outside footer */
+.visit-map-container {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .visit-map {
-  margin-top: 20px;
+  margin: 0 auto;
+  max-width: 400px;
   text-align: center;
 }
 
 .visit-map img {
   max-width: 100%;
   height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer style update */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
 }
 
 /* Responsive Design */
@@ -344,6 +355,10 @@ footer p {
   .nav-links li {
     margin: 5px;
   }
+  
+  .visit-map {
+    max-width: 300px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -363,5 +378,9 @@ footer p {
   .mentoring-category,
   .award-item {
     padding: 15px;
+  }
+  
+  .visit-map {
+    max-width: 250px;
   }
 }
