@@ -302,18 +302,19 @@ li {
   padding: 25px;
 }
 
-/* Visit map container updated for right alignment and smaller size */
+/* Visit map container updated to align with content container */
 .visit-map-container {
-  background-color: #f8f8f8;
-  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   justify-content: flex-end;
-  padding-right: 20px;
+  margin-bottom: 20px;
 }
 
 .visit-map {
-  text-align: right;
   max-width: 300px;
+  text-align: right;
 }
 
 .visit-map img {
@@ -359,7 +360,6 @@ footer p {
   
   .visit-map-container {
     justify-content: center;
-    padding-right: 0;
   }
   
   .visit-map {
