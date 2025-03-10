@@ -1,4 +1,15 @@
-/* Global Styles */
+.news-date {
+  font-weight: bold;
+  color: #cc0000;
+  margin-right: 10px;
+}/* Bio Section */
+.bio-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 40px;
+}/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -128,13 +139,34 @@ li {
   display: inline-block;
 }
 
-/* Bio Section */
-.bio-section {
+/* News Section */
+.news-section {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 30px;
-  margin-bottom: 40px;
+  margin: 30px 0;
+}
+
+.news-list {
+  list-style: none;
+}
+
+.news-item {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.news-text {
+  color: #cc0000;
+  font-weight: 500;
+}
+
+.publication-list p {
+  margin: 20px 0;
+  font-style: italic;
+  color: #666;
 }
 
 /* Publications */
