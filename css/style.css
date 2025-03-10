@@ -302,17 +302,18 @@ li {
   padding: 25px;
 }
 
-/* Visit map container outside footer */
+/* Visit map container updated for right alignment and smaller size */
 .visit-map-container {
   background-color: #f8f8f8;
   padding: 20px 0;
-  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
 }
 
 .visit-map {
-  margin: 0 auto;
-  max-width: 400px;
-  text-align: center;
+  text-align: right;
+  max-width: 300px;
 }
 
 .visit-map img {
@@ -356,8 +357,14 @@ footer p {
     margin: 5px;
   }
   
+  .visit-map-container {
+    justify-content: center;
+    padding-right: 0;
+  }
+  
   .visit-map {
-    max-width: 300px;
+    text-align: center;
+    max-width: 250px;
   }
 }
 
@@ -381,6 +388,6 @@ footer p {
   }
   
   .visit-map {
-    max-width: 250px;
+    max-width: 200px;
   }
 }
