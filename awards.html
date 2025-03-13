@@ -8,25 +8,27 @@
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
   <link rel="stylesheet" href="css/style.css">
   <style>
-    .talks-section {
-      margin: 2rem 0;
-    }
-    
-    .talk-item {
-      margin-bottom: 3rem;
+    .award-item, .talk-item {
+      background-color: white;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
     
     .talk-title {
+      font-size: 18px;
       font-weight: bold;
-      margin-bottom: 0.5rem;
+      margin-bottom: 10px;
     }
     
     .talk-venue {
-      margin-bottom: 0.5rem;
+      margin-bottom: 5px;
     }
     
-    .additional-venues p {
-      margin: 0.3rem 0;
+    .section-title {
+      margin-top: 40px;
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -45,29 +47,8 @@
     </nav>
   </header>
   <div class="container">
-    <section class="awards-section">
-      <h1>Honors and Awards</h1>
-      
-      <div class="awards-list">
-        <div class="award-item">
-          <h3>Tsinghua's Friend - Xiaomi Scholarship</h3>
-          <p>Tsinghua University, 2020</p>
-        </div>
-        
-        <div class="award-item">
-          <h3>The Second Prize of Comprehensive Scholarship</h3>
-          <p>Tsinghua University, 2018</p>
-        </div>
-        
-        <div class="award-item">
-          <h3>Excellence Scholarship for Social Work</h3>
-          <p>Tsinghua University, 2014</p>
-        </div>
-      </div>
-    </section>
-    
     <section class="talks-section">
-      <h1>Talks</h1>
+      <h1 class="section-title">Talks</h1>
       
       <div class="talk-item">
         <div class="talk-title">Uniform-Cost Multi-Path Routing for Reconfigurable Data Center Networks</div>
@@ -76,7 +57,8 @@
       </div>
       
       <div class="talk-item">
-        <div class="talk-venue">Asia Communications and Photonics Conference Workshop, Beijing, China, 11/2024</div>
+        <div class="talk-title">Asia Communications and Photonics Conference Workshop</div>
+        <div class="talk-venue">Beijing, China, 11/2024</div>
       </div>
       
       <div class="talk-item">
@@ -103,6 +85,27 @@
         <div class="talk-title">Building Low-Latency and Energy-Efficient Optical Metro-Access Converged Networks</div>
         <div class="talk-venue">Max Planck Institute for Informatics, online, 12/2020</div>
         <div class="talk-venue">University of Vienna, online, 04/2021</div>
+      </div>
+    </section>
+    
+    <section class="awards-section">
+      <h1 class="section-title">Honors and Awards</h1>
+      
+      <div class="awards-list">
+        <div class="award-item">
+          <h3>Tsinghua's Friend - Xiaomi Scholarship</h3>
+          <p>Tsinghua University, 2020</p>
+        </div>
+        
+        <div class="award-item">
+          <h3>The Second Prize of Comprehensive Scholarship</h3>
+          <p>Tsinghua University, 2018</p>
+        </div>
+        
+        <div class="award-item">
+          <h3>Excellence Scholarship for Social Work</h3>
+          <p>Tsinghua University, 2014</p>
+        </div>
       </div>
     </section>
   </div>
