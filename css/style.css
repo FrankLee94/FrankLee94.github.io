@@ -10,7 +10,7 @@ p {
 }
 
 /* Date styling for new news items */
-.new-date {
+.news-date {
   font-weight: bold;
   color: #cc0000;
   margin-right: 10px;
