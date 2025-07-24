@@ -11,7 +11,7 @@
     .year-divider {
       border-left: 4px solid #2196F3;
       padding-left: 20px;
-      margin: 40px 0 20px 0;
+      margin: 25px 0 15px 0; /* 减少上下边距 */
       background: linear-gradient(90deg, rgba(33, 150, 243, 0.1) 0%, rgba(33, 150, 243, 0.05) 50%, transparent 100%);
       border-radius: 0 8px 8px 0;
     }
@@ -20,12 +20,26 @@
       color: #2196F3;
       font-size: 2.2em;
       font-weight: 700;
-      margin: 15px 0;
+      margin: 10px 0; /* 减少年份标题的上下边距 */
       text-shadow: 0 2px 4px rgba(33, 150, 243, 0.2);
     }
     
     .publication-list {
       margin-left: 0;
+    }
+
+    /* 只调整间距，不改变其他样式 */
+    .publication {
+      margin-bottom: 8px; /* 大幅减少论文间距 */
+      padding: 10px; /* 减少内边距 */
+    }
+
+    .pub-info h3 {
+      margin-bottom: 8px; /* 减少标题下边距 */
+    }
+
+    .pub-info p {
+      margin: 6px 0; /* 减少段落间距 */
     }
   </style>
 </head>
@@ -614,7 +628,9 @@
       </div>
 
       <!-- Preprints -->
-      <h2>Preprints</h2>
+      <div class="year-divider">
+        <h2>Preprints</h2>
+      </div>
       <div class="publication-list">
 
         <div class="publication">
