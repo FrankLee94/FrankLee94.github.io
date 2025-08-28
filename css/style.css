@@ -427,3 +427,15 @@ footer p {
     max-width: 200px;
   }
 }
+
+.mentoring-category h3 {
+  margin-top: 0.6rem;
+  margin-bottom: 0.2rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  opacity: 0.9;
+}
+.mentoring-category ul {
+  margin-left: 1.2rem;
+  margin-bottom: 0.6rem;
+}
