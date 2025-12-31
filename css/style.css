@@ -439,3 +439,47 @@ footer p {
   margin-left: 1.2rem;
   margin-bottom: 0.6rem;
 }
+
+/* =========================================================
+   Added: Selected Publications Legend + Starred Papers
+   ========================================================= */
+
+/* Legend under "Publications" */
+.publication-legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 18px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.publication-legend .star {
+  color: #f4b400;
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.publication-legend .legend-text {
+  font-style: italic;
+}
+
+/* Star badge on the top-right corner of selected publication cards */
+.publication {
+  position: relative; /* needed for absolute positioning of the star */
+}
+
+.publication.starred::after {
+  content: "★";
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 22px;
+  color: #f4b400;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+  pointer-events: none;
+}
+
+.publication.starred {
+  border-left: 5px solid #f4b400;
+}
