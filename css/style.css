@@ -345,12 +345,12 @@ li {
   padding: 0 20px;
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .visit-map {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   min-height: 260px;
   text-align: right;
 }
