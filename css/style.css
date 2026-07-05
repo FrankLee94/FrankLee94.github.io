@@ -349,7 +349,9 @@ li {
 }
 
 .visit-map {
-  max-width: 300px;
+  width: 260px;
+  height: 260px;
+  min-height: 260px;
   text-align: right;
 }
 
