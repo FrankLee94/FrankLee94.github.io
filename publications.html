@@ -1080,14 +1080,33 @@
     const selectedPubBtn = document.getElementById('selected-pub-btn');
     let showingSelected = false;
 
-    selectedPubBtn.addEventListener('click', function () {
-      showingSelected = !showingSelected;
-
+    function updatePublicationView() {
+      /* Show/hide individual publication cards. */
       document.querySelectorAll('.publication').forEach(function (pub) {
         if (showingSelected && !pub.classList.contains('starred')) {
           pub.style.display = 'none';
         } else {
           pub.style.display = '';
+        }
+      });
+
+      /* In Selected Publications mode, keep only years/sections
+         that contain at least one starred publication. */
+      document.querySelectorAll('.year-divider').forEach(function (divider) {
+        const publicationList = divider.nextElementSibling;
+
+        if (!publicationList || !publicationList.classList.contains('publication-list')) {
+          return;
+        }
+
+        const hasStarredPublication = publicationList.querySelector('.publication.starred') !== null;
+
+        if (showingSelected && !hasStarredPublication) {
+          divider.style.display = 'none';
+          publicationList.style.display = 'none';
+        } else {
+          divider.style.display = '';
+          publicationList.style.display = '';
         }
       });
 
@@ -1100,6 +1119,11 @@
         selectedPubBtn.classList.remove('active');
         selectedPubBtn.setAttribute('aria-pressed', 'false');
       }
+    }
+
+    selectedPubBtn.addEventListener('click', function () {
+      showingSelected = !showingSelected;
+      updatePublicationView();
     });
   </script>
 </body>
