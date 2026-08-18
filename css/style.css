@@ -485,3 +485,52 @@ footer p {
 .publication.starred {
   border-left: 5px solid #f4b400;
 }
+
+/* =========================================================
+   Selected Publications Filter Button
+   ========================================================= */
+
+.publications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.publications-header h1 {
+  margin-bottom: 0;
+}
+
+.selected-pub-btn {
+  padding: 8px 16px;
+  border: 1.5px solid #0066cc;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #0066cc;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.selected-pub-btn:hover {
+  background-color: #0066cc;
+  color: #fff;
+  text-decoration: none;
+}
+
+.selected-pub-btn.active {
+  background-color: #0066cc;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .publications-header {
+    align-items: center;
+  }
+
+  .selected-pub-btn {
+    font-size: 0.85rem;
+    padding: 7px 12px;
+  }
+}
